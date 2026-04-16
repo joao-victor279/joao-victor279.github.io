@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form id="id_formulario">
+        <fieldset>
+            <legend>
+                Cadastro Simples
+            </legend>
+                <label for="id_nome">Nome:
+                    <input type="text"
+                    id="id_nome"
+                    class="campo_form"
+                    name="nome"
+                    placeholder="Informe seu nome completo"
+                    minlength="5"
+                    maxlength="200"
+                    autofocus
+                    required
+                    
+            >
+       </label>
+       <br/>
+
+       <label for="id_idade">Idade:
+        <input type="number"
+            id="id_idade"
+            class="campo_form"
+            name="idade"
+            placeholder="Informe sua idade"
+            minlength="1"
+            maxlength="3"
+            required
+            
+            >
+            <br/>
+
+       <label for="id_altura">Altura:
+                <input 
+                    type="text"
+                    id="id_altura"
+                    class="campo_form"
+                    name="altura"
+                    placeholder="Informe sua altura"
+                    minlength="1"
+                    maxlength="3"
+                    required
+            >
+        </label>
+        
+       <div class="botoes_form">
+            <button type="submit">show</button>
+             <button type="reset">ai dento</button>
+       </div>
+        </fieldset>
+    </form>
+
+    <div id="id_result"></div>
+
+    <script src="wow.js"></script>
+</body>
+</html>

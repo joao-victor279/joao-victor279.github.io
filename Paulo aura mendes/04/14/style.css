@@ -1,0 +1,77 @@
+body{
+    background-color: darkred;
+    justify-content: center;
+    align-items: center ;
+    color: aliceblue;
+    
+}
+
+fieldset{
+    background-color: rgb(148, 58, 58);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+legend{
+    display: block;
+    text-align: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+#id_endereco{
+    width: 400px;
+    border: 5px solid white;
+    border-radius: 10px
+}
+
+#id_massa{
+    display: block;
+    margin: auto;
+}
+
+#id_nome{
+    width: 358px;
+    border: 5px solid white;
+    border-radius: 10px
+}
+
+button[type="submit"]{
+    background-color: rgb(10, 107, 10);
+    color: black;
+}
+button[type="submit"]:hover{
+    background-color: rgb(45, 133, 45);
+    color: white;
+}
+
+button[type="reset"]{
+    background-color: brown;
+    color: black;
+}
+button[type="reset"]:hover{
+    background-color: brown;
+    color: white;
+}
+
+.pedido{
+    background-color: white;
+    color: black;
+    border: 2px dashed rgb(58, 133, 133);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}

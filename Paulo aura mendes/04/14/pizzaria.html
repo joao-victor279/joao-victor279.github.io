@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+</head>
+<body>
+    <form id="id_pizzaria">
+            <h1>PIZZARIA (tem pizza)</h1>
+            <br>
+            <label for="nome"><b>Nome do cliente:</b>
+                <input 
+                type="text"
+                id="id_nome"
+                placeholder="Informe seu nome"
+                required
+                >
+            </label>
+            <br>
+            <fieldset>
+                <legend>Ingredientes:</legend>
+                <label for="calabresa">
+                    <input 
+                    type="checkbox"
+                    name="check_ing"
+                    value="Calabresa"
+                    id="id_calabresa"
+                    >Calabresa
+                </label>
+                <label for="catupiry">
+                    <input 
+                    type="checkbox"
+                    name="check_ing"
+                    value="Catupiry"
+                    id="id_catupiry"
+                    >Catupiry
+                </label>
+                <label for="queijo">
+                    <input 
+                    type="checkbox"
+                    name="check_ing"
+                    value="Queijo"
+                    id="id_queijo"
+                    >Queijo
+                </label>
+                <label for="Cebola">
+                    <input 
+                    type="checkbox"
+                    name="check_ing"
+                    value="Cebola"
+                    id="id_cebola"
+                    >Cebola
+                </label>    
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Tamanho da Pizza:</legend>
+                <label for="p">
+                    <input 
+                    type="radio"
+                    name="radio_t"
+                    value="Pequena"
+                    id="id_p"
+                    >P (4 fatias)
+                </label>
+                <label for="m">
+                    <input 
+                    type="radio"
+                    name="radio_t"
+                    value="Média"
+                    id="id_m"
+                    >M (6 fatias)
+                </label>
+                <label for="g">
+                    <input 
+                    type="radio"
+                    name="radio_t"
+                    value="Grande"
+                    id="id_g"
+                    >G (8 fatias)
+                </label>
+                <label for="familia">
+                    <input 
+                    type="radio"
+                    name="radio_t"
+                    value="Família"
+                    id="id_f"
+                    >Família (12 fatias)
+                </label>
+            </fieldset>
+            <br>
+                <legend><b>Tipo da massa:</b></legend>
+                <br>
+                <select name="massa" id="id_massa">
+                    <option selected disabled>Selecione o tipo de massa</option>
+                    <option value="Tradicional">Massa Tradicional</option>
+                    <option value="Italiana">Massa Italiana</option>
+                    <option value="Pan">Massa Pan</option>
+                    <option value="Integral">Massa Integral</option>
+                </select>
+                <br>
+                <br>
+                <label for="endereco"><b>Endereço:</b>
+                    <input 
+                    type="text"
+                    id="id_endereco"
+                    placeholder="Informe seu endereço(Cidade | Bairro | Rua | Número da moradia)">
+                </label>
+            <br>
+            <center>
+                <button type="submit">Confirmar Pedido</button>
+                <button type="reset">Limpar</button>
+            </center>
+    </form>
+    
+    <script src="tuff.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
