@@ -112,6 +112,20 @@ input, textarea{
     border-radius: 5px;
 }
 
-button{
-    background-color: ;
+button[type="submit"]{
+    background-color: rgb(10, 107, 10);
+    color: black;
+}
+button[type="submit"]:hover{
+    background-color: rgb(45, 133, 45);
+    color: white;
+}
+
+button[type="reset"]{
+    background-color: brown;
+    color: black;
+}
+button[type="reset"]:hover{
+    background-color: brown;
+    color: white;
 }
