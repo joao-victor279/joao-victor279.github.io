@@ -10,13 +10,15 @@
     <header>
         <div class="logo"></div>
         <nav>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#tecnologias">Tecnologias</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
         </nav>
     </header>
-
+<hr>
             <section id="id_inicio">
             <div class="banner">
                 <img src="dante.jpg" alt="">
@@ -31,9 +33,11 @@
     <h2>Sobre mim</h2>
     <br>
     <p>
-        Olá, eu sou aluno da EEEP LHVR(Lúcia Helena Viana Ribeiro), que tem como técnicos o professor
-        Paulo Henrique Mendes e Francisco Ericson. No momento pretendo seguir no ramo da informática 
-        e me especializar em HTML/CSS e JS.
+        Olá, eu sou aluno da EEEP LHVR(Lúcia Helena Viana Ribeiro), que 
+        <br>tem como técnicos o professor Paulo Henrique Mendes e Francisco <br>
+        Ericson. No momento pretendo seguir no ramo da informática 
+        e me <br>
+        especializar em HTML/CSS e JS.
     </p>
 </section>
 
@@ -67,7 +71,14 @@
         name="nome" 
         placeholder="Seu nome" 
         required 
-        />
+        >
+        <input 
+        type="text"
+        name="email"
+        id="id_email"
+        placeholder="Digite seu e-mail"
+        required
+        >
         <textarea 
         name="mensagem" 
         placeholder="Digite sua mensagem"
