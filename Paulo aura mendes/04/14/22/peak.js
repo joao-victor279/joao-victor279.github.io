@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', (evento)=>{
         bloco.style.backgroundColor = "green"
         bloco.style.color = "white"
     });
-        document.addEventListener('DOMContentLoaded', (evento) => {
+        document.addEventListener(' DOMContentLoaded', (evento) => {
             let caixa_texto = document.createElement("input");
             let caixa_texto2 = document.createElement("input");
             let informacao = document.createElement("h5");
