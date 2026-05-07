@@ -1,0 +1,21 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url(DevilMayCry3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    margin: 130px;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #0dbfbf;
+    text-shadow: 2px 2px 2px rgb(121, 117, 117);
+    background-color: #99161687;
+    border-radius: 7px;
+}
