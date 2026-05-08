@@ -19,3 +19,30 @@ h1{
     background-color: #99161687;
     border-radius: 7px;
 }
+
+.box_botao{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.botoes{
+    background-color: #99161697;
+    color: #fffffffe;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 2px 5px 7px black;
+    border: none;
+    border-radius: 2px;
+    transition: 0.5s;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+.botoes:hover{
+    box-shadow: 2px 5px 7px rgba(255, 255, 255, 0.313);
+}
+.botoes.disabled{
+    
+}
