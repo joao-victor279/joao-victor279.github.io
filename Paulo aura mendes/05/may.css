@@ -8,10 +8,15 @@ body{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    margin: 0;
 }
 
 h1{
-    margin: 130px;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 150px auto;
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #0dbfbf;
@@ -23,26 +28,35 @@ h1{
 .box_botao{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    text-align: center;
     justify-content: center;
-    gap: 10px;
     margin: 0 auto;
+    gap: 15px;
+    padding: 20px;
 }
 
 .botoes{
-    background-color: #99161697;
+    background-color: #991616b0;
     color: #fffffffe;
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-shadow: 2px 5px 7px black;
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     transition: 0.5s;
-    padding: 20px 30px;
-    cursor: pointer;
+    padding:20px 30px;
+    font-size: 20px;
 }
 .botoes:hover{
     box-shadow: 2px 5px 7px rgba(255, 255, 255, 0.313);
+    transform: translateY(-2px);
+    transition: 0.5s;
+    cursor: pointer;
 }
-.botoes.disabled{
-    
+.botoes:disabled{
+    box-shadow: none;
+    transform: none;
+    background-color: #99161667;
+    transition: 0.5s;
+    cursor: not-allowed;
 }
