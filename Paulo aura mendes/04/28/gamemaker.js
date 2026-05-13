@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', (evento) =>{
         evento.preventDefault();
         saco.textContent = "JAB";
         saco.style.color = "black";
-        contar();
+        contar();   
     });
 
     saco.addEventListener('contextmenu', (evento) =>{
