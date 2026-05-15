@@ -1,0 +1,60 @@
+html{
+    height: 100%
+}
+
+body{
+    margin: 0 auto;
+    height: 100vh;
+    background-image: url(vergil.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.titulo{
+    width: 75vh;
+    filter: drop-shadow(0px 0px 10px rgb(49, 110, 233));
+}
+
+.subtitulo{
+    width: 90vh;
+    filter: drop-shadow(0px 0px 10px rgb(7, 7, 172));
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px;
+    color: white;
+    opacity: 90%;
+}
+
+#id_nome{
+    width: 260px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+fieldset{
+    background-color: #043152;
+    border: 2px solid #0099ff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 60vh;
+    height: 200px;
+    box-shadow: -7px 5px 7px gray;
+}
+
+legend{
+    margin: auto;
+    font-weight: bolder;
+}
+
+#resultado_fila{
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 3px;
+    color: white;
+}

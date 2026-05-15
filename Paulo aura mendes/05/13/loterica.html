@@ -6,33 +6,60 @@
     <title>Lotérica</title>
 </head>
 <body>
+
+
+    <div class="conteiner">
+
+    <img src="vergilmotivation.png" class="titulo">
+    <br>
+    
+    <img src="sub.png" class="subtitulo">
     <form id="id_loterica">
         <fieldset>
-            <legend>Cadastro:</legend>
+            <legend>Se Motive:</legend>
             <label for="nome">
-                Nome:
+                Motivador:
                 <input 
                 type="text"
                 name="nome"
                 id="id_nome"
-                placeholder="Informe o nome completo"
+                placeholder="Informe o nome do que busca a motivação"
                 required
                 >
             </label>
             <br>
-            <input type="radio" name="radio_p" id="id_normal">S/ prioridade
-            <input type="radio" name="radio_p" id="id_prioridade">C/ prioridade
+            <input 
+            type="radio" 
+            name="radio_p" 
+            id="id_normal"
+            value="sem prioridade"
+            >dante...
+            <input 
+            type="radio" 
+            name="radio_p" 
+            id="id_prioridade"
+            value="prioridade"
+            >I AM THE STORM
             <br>
-            <button type="submit">Cadastrar</button>
-            <input type="button" id="id_consultar" onclick="" value="Consultar">
+            <button type="submit">I need more... POWER</button>
 
         </fieldset>
 
         <fieldset>
-            <legend>Fila de espera:</legend>
+                <legend>Fila da motivação:</legend>
+            
+                <div id="resultado_fila"></div>
 
         </fieldset>
+        
+        <input 
+        type="button" 
+        value="JUDGEMENT CUT"
+        id="btn_atender"
+        >
+
     </form>
+</div>
 
     <link rel="stylesheet" href="style.css">
     <script src="aciretol.js"></script>
