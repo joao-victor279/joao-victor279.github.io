@@ -26,7 +26,7 @@ function mostrarFila(){
         
     for(let i = 0; i < fila_espera.length; i++){       
         resultado_fila.innerHTML +=
-        `<p> >Motivação de ${fila_espera[i]} vai ser colocada à prova daqui a ${i} motivadores</p>`
+        `<p>>Motivação de ${fila_espera[i]} vai ser colocada à prova daqui a ${i} motivadores</p>`
     };
 };
 
@@ -38,7 +38,7 @@ function atender(){
 
 
 //eventos
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
     e.preventDefault();
     
     let nome = document.getElementById("id_nome").value;
@@ -54,4 +54,10 @@ btn_atender.addEventListener('click', (e) =>{
     e.preventDefault();
 
     atender()
+
+    document.body.style.backgroundImage = "url('vergil-judgement-cut-end.gif')";
+    
+    setTimeout(() => {
+        document.body.style.backgroundImage = "url('vergil.png')";
+    }, 13500);
 })

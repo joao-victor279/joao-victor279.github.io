@@ -37,6 +37,47 @@ body{
     border-radius: 5px;
 }
 
+input[name="radio_p"]{
+    margin: 50px 5px 60px;
+    cursor: pointer;
+}
+
+
+
+button{
+    border-radius: 8px;
+    border: 2px solid #0099ff;
+    width: 200px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#power{
+    color: #0037ff;
+    font-weight: bolder;
+}
+
+input[type="button"]{
+    margin: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #31047a;
+    color:aliceblue;
+    padding: 10px 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    transform-origin: center center;
+}
+
+input[type="button"]:hover{
+     cursor: pointer;
+     transform: scale(1.15);
+     box-shadow: 0px 0px 20px rgb(89, 0, 255);
+     transition: 0.2s;
+}
+
 fieldset{
     background-color: #043152;
     border: 2px solid #0099ff;
