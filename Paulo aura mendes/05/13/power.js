@@ -26,7 +26,18 @@ function mostrarFila(){
         
     for(let i = 0; i < fila_espera.length; i++){       
         resultado_fila.innerHTML +=
-        `<p>>Motivação de ${fila_espera[i]} vai ser colocada à prova daqui a ${i} motivadores</p>`
+        `<p>Motivação de ${fila_espera[i]} vai ser colocada à prova daqui a ${i} motivadores</p>
+        <input
+        type="button"
+        onclick="editar(${i})"
+        value="Editar"
+        id="btn_editar">
+        <input
+        type="button"
+        onclick="excluir(${i})"
+        value="Excluir"
+        id="btn_excluir">
+        <br/>`;
     };
 };
 
@@ -35,6 +46,18 @@ function atender(){
 
     mostrarFila();
 };
+
+function editar(indice){
+    fila_espera[indice] = prompt(`Digite o novo nome: `);
+    mostrarFila();
+    console.log()
+}
+
+function excluir(indice){
+    fila_espera.splice(indice, 1);
+    mostrarFila();
+    console.log()
+}
 
 
 //eventos
@@ -60,4 +83,16 @@ btn_atender.addEventListener('click', (e) =>{
     setTimeout(() => {
         document.body.style.backgroundImage = "url('vergil.png')";
     }, 13500);
+})
+
+btn_editar.addEventListener('click', (e) =>{
+    e.preventDefault();
+
+    editar()
+})
+
+btn_atender.excluir.addEventListener('click', (e) =>{
+    e.preventDefault();
+
+    excluir()
 })
