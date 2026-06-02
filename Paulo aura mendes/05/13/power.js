@@ -18,45 +18,70 @@ function cadastrar(nome_parametro, radio_parametro){
         fila_espera.push(nome_parametro);
     }
 
+    localStorage.setItem("fila_data", fila_espera.join(", "));
+
     mostrarFila();
-}
+};
 
 function mostrarFila(){
     resultado_fila.innerHTML = ""
-        
-    for(let i = 0; i < fila_espera.length; i++){       
+
+    local_storage = localStorage.getItem("fila_data");
+    if(local_storage == null){
+        resultado_fila.innerHTML += `<p>Não há nenhum forte o suficiente.</p>`
+    }
+    else{
+        fila_espera = local_storage.split(", ");
+        for(let i = 0; i < fila_espera.length; i++){
         resultado_fila.innerHTML +=
         `<p>Motivação de ${fila_espera[i]} vai ser colocada à prova daqui a ${i} motivadores</p>
+
         <input
         type="button"
         onclick="editar(${i})"
-        value="Editar"
-        id="btn_editar">
+        value="Editar">
+
         <input
         type="button"
         onclick="excluir(${i})"
-        value="Excluir"
-        id="btn_excluir">
+        value="Excluir">
+        
         <br/>`;
-    };
+        };
+    }
 };
 
 function atender(){
     fila_espera.shift();
+
+    if(fila_espera.length == 0){
+        localStorage.removeItem("fila_data")
+    }
+    else{
+        localStorage.setItem("fila_data", fila_espera.join(", "))
+    }
 
     mostrarFila();
 };
 
 function editar(indice){
     fila_espera[indice] = prompt(`Digite o novo nome: `);
+
+    localStorage.setItem("fila_data", fila_espera.join(", "));
+
     mostrarFila();
-    console.log()
 }
 
 function excluir(indice){
     fila_espera.splice(indice, 1);
+    if(fila_espera.length == 0){
+        localStorage.removeItem("fila_data")
+    }
+    else{
+        localStorage.setItem("fila_data", fila_espera.join(", "))
+    }
+
     mostrarFila();
-    console.log()
 }
 
 
@@ -85,14 +110,4 @@ btn_atender.addEventListener('click', (e) =>{
     }, 13500);
 })
 
-btn_editar.addEventListener('click', (e) =>{
-    e.preventDefault();
-
-    editar()
-})
-
-btn_atender.excluir.addEventListener('click', (e) =>{
-    e.preventDefault();
-
-    excluir()
-})
+mostrarFila()
