@@ -24,9 +24,9 @@ function cadastrar(nome_parametro, radio_parametro){
 };
 
 function mostrarFila(){
-    resultado_fila.innerHTML = ""
+    resultado_fila.innerHTML = "";
 
-    local_storage = localStorage.getItem("fila_data");
+    let local_storage = localStorage.getItem("fila_data");
     if(local_storage == null){
         resultado_fila.innerHTML += `<p>Não há nenhum forte o suficiente.</p>`
     }
