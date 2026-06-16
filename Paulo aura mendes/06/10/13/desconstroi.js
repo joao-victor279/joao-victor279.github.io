@@ -26,3 +26,5 @@ function listarLocalStorage(){
 function cadastrarLocalStorage(chave, valor){
     localStorage.setItem(chave, JSON.stringify(valor))
 }
+
+function editar

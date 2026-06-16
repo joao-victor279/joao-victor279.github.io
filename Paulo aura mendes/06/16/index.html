@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de jogos</title>
+</head>
+<body>
+    <form id="jogoseconsoles">
+        <fieldset>
+            <legend>Cadastro de Jogos</legend>
+        <label for="nome">Jogo:
+            <input
+            type="text" 
+            required
+            autofocus
+            name="nome" 
+            placeholder="Digite aqui..."
+            id="id_nome"
+            >
+        </label>
+        <br>
+        <label for="data">Data de lançamento:
+            <input 
+            type="date"
+            id="id_data"
+            name="data"
+            placeholder="Ex: dd-mm-aaaa"
+            required
+            >
+        </label>
+        <br>
+        <label for="desenvolvedora">Desenvolvedora
+            <input 
+            type="text" 
+            name="desenvolvedora" 
+            id="id_dev"
+            required
+            placeholder="Digite aqui..."
+            >
+        </label>
+
+        </fieldset>
+    </form>
+    <button type="submit">Enviar</button><button>Vender</button>
+    <fieldset>
+        <div id="id_catalogo"></div>
+    </fieldset>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+</html>
