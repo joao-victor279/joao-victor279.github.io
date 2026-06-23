@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chocolate;
+}
+
+fieldset{
+    background-color: burlywood;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#id_nome,
+#id_email,
+#id_idade{
+  width: 100%;
+}
+
+.result{
+    background-color: white;
+    border: black;
+    padding: 8px;
+    margin: 10px;
+    font-size: 12px;
+}
+
+fieldset label{
+  display: inline;
+  margin-right: 10px;
+}

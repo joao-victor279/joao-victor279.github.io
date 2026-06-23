@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infor Game Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class = "Menu">
+    <header><img src="INFOr-18-06-2026.png" alt="Infor" width="100vh"><img src="Game-18-06-2026.png" alt="Game" width="130vh"><img src="shop-18-06-2026.png" alt="Shop" width="90vh"></header>
+
+        <div id="usuario"></div>
+            <form id="jogoseconsoles">
+
+                <label for="jogo">Jogo:
+                    <input
+                    type="text" 
+                    required
+                    autofocus
+                    name="jogo" 
+                    placeholder="Digite aqui..."
+                    id="id_jogo"
+                    >
+                </label>
+
+                <br>
+                
+                <label for="data">Data de lançamento:
+                    <input 
+                    type="date"
+                    id="id_data"
+                    name="data"
+                    placeholder="Ex: dd-mm-aaaa"
+                    required
+                    >
+                </label>
+
+                <br>
+
+                <label for="desenvolvedora">Desenvolvedora:
+                    <input 
+                    type="text" 
+                    name="desenvolvedora" 
+                    id="id_dev"
+                    required
+                    placeholder="Digite aqui..."
+                    >
+                </label>
+
+            <button type="submit">Enviar</button>  
+            </form>
+        
+
+
+            
+</div>
+    <fieldset>
+        <div id="id_catalogo"></div>
+    </fieldset>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+</html>
