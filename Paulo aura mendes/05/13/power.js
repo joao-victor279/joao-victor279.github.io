@@ -20,8 +20,7 @@ function cadastrar(nome_parametro, radio_parametro){
 
     localStorage.setItem("fila_data", fila_espera.join(", "));
 
-    mostrarFila();
-};
+u};
 
 function mostrarFila(){
     resultado_fila.innerHTML = "";

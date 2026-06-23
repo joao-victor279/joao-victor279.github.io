@@ -1,7 +1,21 @@
 let form = document.getElementById("jogoseconsoles");
 let catalogo = document.getElementById("id_catalogo");
-
 let jogos = [];
+
+document.addEventListener("DOMContentLoaded", () => {
+    
+    let user = localStorage.getItem("user");
+
+    if(user == null){
+        user = prompt("Digite seu nome:");
+        localStorage.setItem("user", user);
+    }
+
+    document.getElementById("usuario").innerHTML =
+        `<h1 id = "Nome_usuario">Catálogo do usuário: ${user}<h1>`;
+
+    listarLocalStorage();
+});
 
 form.addEventListener("submit", (e) =>{
     e.preventDefault();
@@ -16,6 +30,7 @@ form.addEventListener("submit", (e) =>{
         data_chave: data,
         dev_chave: dev
     }
+    form.reset();
                
     cadastrarLocalStorage(jogo)
 
@@ -28,19 +43,21 @@ function listarLocalStorage(){
     let local_storage = JSON.parse(localStorage.getItem("games"));
     console.log(local_storage)
     if(local_storage == null){
-        catalogo.innerHTML += `<p>Não há jogos no catalogo. pobreee</p>`
+        catalogo.innerHTML += `<p>Não há jogos no catalogo.</p>`
     }
     else {
-        console.log(local_storage)
+        let local_storage = jogos
 
         for(let i = 0; i < jogos.length; i++){
         catalogo.innerHTML += 
-        `<p>N°: ${[i + 1]} | Jogo: ${jogos[i].nome_chave} |Lançamento: ${jogos[i].data_chave} | Dev: ${jogos[i].dev_chave}</p>
+        `<p>|N°: ${[i + 1]} <br>|Jogo: ${jogos[i].nome_chave} <br>|Lançamento: ${jogos[i].data_chave} <br>| Dev: ${jogos[i].dev_chave}</p>
 
         <input
         type="button"
         onclick="editar(${[i]})"
         value="Editar">
+
+        <br>
 
         <input
         type="button"
@@ -48,16 +65,20 @@ function listarLocalStorage(){
         value="Excluir">
         
         <br/>`;
+        
+
         };
     }
 };
 
 function cadastrarLocalStorage(jogo_parametro){
+    
     jogos.push(jogo_parametro)
     localStorage.setItem("games", JSON.stringify(jogos))
     console.log(jogos)
 
     listarLocalStorage()
+    
 }
 
 function editar(indice){
